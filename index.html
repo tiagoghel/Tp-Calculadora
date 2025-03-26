@@ -8,35 +8,31 @@
 </head>
 <body>
     <input type="text" id="pantalla" readonly>
-
-    <br>
-
-    <button class="boton" id=7 onclick="escribir(7)">7</button>
-    <button class="boton" id=8 onclick="escribir(8)">8</button>
-    <button class="boton" id=9 onclick="escribir(9)">9</button>
-    <button class="boton" id="X"onclick="Resolver(*)">X</button>
-
-    <br>
-
-    <button class="boton" id=4 onclick="escribir(4)">4</button>
-    <button class="boton" id=5 onclick="escribir(5)">5</button>
-    <button class="boton" id=6 onclick="escribir(6)">6</button>
-    <button class="boton" id="-" onclick="">-</button>
-
-    <br>
-
-    <button class="boton" id=1 onclick="escribir(1)">1</button>
-    <button class="boton" id=2 onclick="escribir(2)">2</button>
-    <button class="boton" id=3 onclick="escribir(3)">3</button>
-    <button class="boton" id="+" onclick="escribir('+')">+</button>
-
-    <br>
-
     
-    <button class="boton" id="C" onclick="">C</button>
-    <button class="boton" id=0 onclick="Numero(0)">0</button>
-    <button class="boton" id="/" onclick="">/</button>
-    <button class="submit" id="=" >=</button>
+
+    <button class="boton" id=7 onclick="guardarNumero('7')">7</button>
+    <button class="boton" id=8 onclick="guardarNumero('8')">8</button>
+    <button class="boton" id=9 onclick="guardarNumero('9')">9</button>
+    <button class="boton" id=4 onclick="guardarNumero('4')">4</button>
+    <button class="boton" id=5 onclick="guardarNumero('5')">5</button>
+    <button class="boton" id=6 onclick="guardarNumero('6')">6</button>
+    <button class="boton" id=1 onclick="guardarNumero('1')">1</button>
+    <button class="boton" id=2 onclick="guardarNumero('2')">2</button>
+    <button class="boton" id=3 onclick="guardarNumero('3')">3</button>
+    <button class="boton" id=0 onclick="guardarNumero('0')">0</button>
+    
+    <section class="opera" id="opera">
+    
+    <button class="boton" id="X"onclick="guardarOperacion(3)">X</button>
+    <button class="boton" id="-" onclick="guardarOperacion(2)">-</button>
+    <button class="boton" id="+" onclick="guardarOperacion(1)">+</button>
+    <button class="boton" id="/" onclick="guardarOperacion(4)">/</button>
+    <button class="submit" id="=" onclick="resolver()">=</button>
+    
+
+    </section>
+
+    <button class="boton" id="C" onclick="borrar()">C</button>
 
     <script src="script.js"></script>
 </body>
